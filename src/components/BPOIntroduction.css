@@ -1,0 +1,110 @@
+
+/* BPO Introduction Section */
+
+.bpo-intro {
+  background: #ffffff;
+}
+
+.bpo-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.bpo-intro-content h2 {
+  max-width: 580px;
+  margin-bottom: 24px;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1.2;
+}
+
+.bpo-intro-content h2 span {
+  color: var(--color-accent);
+}
+
+.bpo-intro-lead {
+  color: var(--color-primary);
+  font-size: 19px;
+  line-height: 1.85;
+}
+
+.bpo-intro-content > p:not(.bpo-intro-lead) {
+  margin-bottom: 28px;
+  color: var(--color-text-secondary);
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.bpo-intro-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bpo-benefit-card {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) 24px;
+  align-items: start;
+  gap: 16px;
+  padding: 24px;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: var(--color-surface);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.bpo-benefit-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-medium);
+}
+
+.bpo-benefit-number {
+  color: var(--color-accent);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.bpo-benefit-card h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.bpo-benefit-card p {
+  margin-bottom: 0;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.bpo-benefit-arrow {
+  color: var(--color-accent);
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .bpo-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .bpo-intro-lead {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bpo-benefit-card {
+    grid-template-columns: 30px minmax(0, 1fr);
+    gap: 12px;
+    padding: 18px;
+  }
+
+  .bpo-benefit-arrow {
+    display: none;
+  }
+
+  .bpo-benefit-card h3 {
+    font-size: 18px;
+  }
+}

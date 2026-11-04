@@ -1,0 +1,538 @@
+
+/* =========================================
+   TELEMARKETING SERVICES
+   Intracia Technologies corporate theme
+========================================= */
+
+.telemarketing-page {
+  --tm-bg: #f2f4f5;
+  --tm-white: #ffffff;
+  --tm-navy: #142c43;
+  --tm-text: #526273;
+  --tm-green: #286443;
+  --tm-border: #d9dee3;
+
+  color: var(--tm-navy);
+  background: var(--tm-bg);
+}
+
+.telemarketing-page *,
+.telemarketing-page *::before,
+.telemarketing-page *::after {
+  box-sizing: border-box;
+}
+
+.telemarketing-page h1,
+.telemarketing-page h2,
+.telemarketing-page h3,
+.telemarketing-page p {
+  overflow-wrap: break-word;
+}
+
+.telemarketing-page h1,
+.telemarketing-page h2,
+.telemarketing-page h3 {
+  color: var(--tm-navy);
+  line-height: 1.2;
+}
+
+.telemarketing-page p {
+  color: var(--tm-text);
+}
+
+.telemarketing-container {
+  width: min(1180px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.telemarketing-section {
+  padding: 84px 0;
+}
+
+.telemarketing-eyebrow {
+  margin: 0 0 16px;
+  color: var(--tm-green) !important;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+/* HERO */
+
+.telemarketing-hero {
+  padding: 72px 0 82px;
+  background: var(--tm-bg);
+}
+
+.telemarketing-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr);
+  align-items: center;
+  gap: 64px;
+}
+
+.telemarketing-hero-content h1 {
+  max-width: 620px;
+  margin: 0 0 22px;
+  font-size: clamp(38px, 4.5vw, 58px);
+  font-weight: 700;
+  letter-spacing: -1.8px;
+}
+
+.telemarketing-hero-description {
+  max-width: 560px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.telemarketing-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.telemarketing-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 13px 20px;
+  border: 1px solid var(--tm-green);
+  border-radius: 2px;
+  background: var(--tm-green);
+  color: var(--tm-white);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.telemarketing-button:hover {
+  border-color: #204f35;
+  background: #204f35;
+  color: var(--tm-white);
+}
+
+.telemarketing-text-link,
+.telemarketing-inline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--tm-navy);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.telemarketing-text-link:hover,
+.telemarketing-inline-link:hover {
+  color: var(--tm-green);
+}
+
+.telemarketing-hero-visual {
+  min-width: 0;
+}
+
+.telemarketing-hero-visual img {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.telemarketing-image-caption {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 16px;
+}
+
+.telemarketing-caption-line {
+  width: 28px;
+  height: 2px;
+  flex: 0 0 auto;
+  background: var(--tm-green);
+}
+
+.telemarketing-image-caption p {
+  margin: 0;
+  font-size: 12px;
+}
+
+/* OVERVIEW */
+
+.telemarketing-overview {
+  background: var(--tm-white);
+  border-top: 1px solid var(--tm-border);
+  border-bottom: 1px solid var(--tm-border);
+}
+
+.telemarketing-overview-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 80px;
+}
+
+.telemarketing-overview-grid h2 {
+  max-width: 440px;
+  margin: 0;
+  font-size: clamp(30px, 3.6vw, 42px);
+  letter-spacing: -0.8px;
+}
+
+.telemarketing-overview-copy > p {
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.telemarketing-inline-link {
+  margin-top: 8px;
+  color: var(--tm-green);
+}
+
+/* SECTION HEADINGS */
+
+.telemarketing-section-heading {
+  max-width: 720px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.telemarketing-section-heading h2 {
+  margin: 0 0 16px;
+  font-size: clamp(30px, 3.8vw, 42px);
+  letter-spacing: -0.9px;
+}
+
+.telemarketing-section-heading > p:last-child {
+  max-width: 630px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* CAPABILITIES */
+
+.telemarketing-capabilities {
+  background: var(--tm-bg);
+}
+
+.telemarketing-capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--tm-border);
+  background: var(--tm-border);
+}
+
+.telemarketing-capability-card {
+  min-width: 0;
+  padding: 30px 26px;
+  background: var(--tm-white);
+}
+
+.telemarketing-card-number {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: var(--tm-green);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.telemarketing-capability-card h3 {
+  margin: 0 0 12px;
+  font-size: 19px;
+}
+
+.telemarketing-capability-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* APPROACH */
+
+.telemarketing-approach {
+  background: var(--tm-white);
+  border-top: 1px solid var(--tm-border);
+  border-bottom: 1px solid var(--tm-border);
+}
+
+.telemarketing-approach-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 90px;
+}
+
+.telemarketing-approach-intro h2 {
+  max-width: 440px;
+  margin: 0 0 18px;
+  font-size: clamp(30px, 3.6vw, 42px);
+  letter-spacing: -0.8px;
+}
+
+.telemarketing-approach-intro > p:not(.telemarketing-eyebrow) {
+  max-width: 440px;
+  margin: 0 0 28px;
+  line-height: 1.85;
+}
+
+.telemarketing-process-list {
+  border-top: 1px solid var(--tm-border);
+}
+
+.telemarketing-process-item {
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr);
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--tm-border);
+}
+
+.telemarketing-process-number {
+  padding-top: 3px;
+  color: var(--tm-green);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.telemarketing-process-item h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.telemarketing-process-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* RELATED SERVICES */
+
+.telemarketing-related {
+  background: var(--tm-bg);
+}
+
+.telemarketing-related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.telemarketing-related-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px;
+  border: 1px solid var(--tm-border);
+  background: var(--tm-white);
+}
+
+.telemarketing-related-card h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+.telemarketing-related-card p {
+  margin: 0 0 22px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.telemarketing-related-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  color: var(--tm-green);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.telemarketing-related-link:hover {
+  color: var(--tm-navy);
+}
+
+/* CONTACT CTA */
+
+.telemarketing-contact-cta {
+  padding: 58px 0;
+  background: var(--tm-navy);
+}
+
+.telemarketing-contact-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.telemarketing-contact-cta .telemarketing-eyebrow {
+  color: #b8d4c2 !important;
+}
+
+.telemarketing-contact-cta h2 {
+  max-width: 680px;
+  margin: 0 0 12px;
+  color: var(--tm-white);
+  font-size: clamp(28px, 3.4vw, 38px);
+  letter-spacing: -0.7px;
+}
+
+.telemarketing-contact-cta-inner > div > p:last-child {
+  max-width: 650px;
+  margin: 0;
+  color: #d2dce4;
+  line-height: 1.8;
+}
+
+.telemarketing-button-light {
+  flex-shrink: 0;
+  border-color: var(--tm-white);
+  background: var(--tm-white);
+  color: var(--tm-navy);
+}
+
+.telemarketing-button-light:hover {
+  border-color: #e5e9ec;
+  background: #e5e9ec;
+  color: var(--tm-navy);
+}
+
+/* TABLET */
+
+@media (max-width: 960px) {
+  .telemarketing-hero-grid {
+    gap: 36px;
+  }
+
+  .telemarketing-hero-visual img {
+    height: 350px;
+  }
+
+  .telemarketing-overview-grid,
+  .telemarketing-approach-grid {
+    gap: 42px;
+  }
+
+  .telemarketing-capability-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 680px) {
+  .telemarketing-container {
+    width: calc(100% - 32px);
+  }
+
+  .telemarketing-section {
+    padding: 58px 0;
+  }
+
+  .telemarketing-hero {
+    padding: 48px 0 56px;
+  }
+
+  .telemarketing-hero-grid,
+  .telemarketing-overview-grid,
+  .telemarketing-approach-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .telemarketing-hero-content h1 {
+    font-size: clamp(34px, 9vw, 46px);
+    letter-spacing: -1px;
+  }
+
+  .telemarketing-hero-description {
+    font-size: 15px;
+  }
+
+  .telemarketing-hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .telemarketing-hero-visual img {
+    height: 280px;
+  }
+
+  .telemarketing-overview-grid h2,
+  .telemarketing-approach-intro h2,
+  .telemarketing-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .telemarketing-section-heading {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .telemarketing-section-heading > p:last-child {
+    margin-inline: 0;
+  }
+
+  .telemarketing-capability-grid,
+  .telemarketing-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .telemarketing-capability-card {
+    padding: 25px 22px;
+  }
+
+  .telemarketing-card-number {
+    margin-bottom: 15px;
+  }
+
+  .telemarketing-related-card {
+    padding: 24px;
+  }
+
+  .telemarketing-process-item {
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .telemarketing-contact-cta {
+    padding: 46px 0;
+  }
+
+  .telemarketing-contact-cta-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .telemarketing-contact-cta h2 {
+    font-size: 30px;
+  }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  .telemarketing-page *,
+  .telemarketing-page *::before,
+  .telemarketing-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
