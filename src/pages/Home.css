@@ -579,5 +579,10 @@
 @media (prefers-reduced-motion: reduce) {
   .intracia-site *,
   .intracia-site *::before,
-  .intracia-site *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+  .intracia-site *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } 
+
+}
+
+.intracia-side-contact.cursor-following {
+  transition: left 0.08s linear, top 0.08s linear;
 }

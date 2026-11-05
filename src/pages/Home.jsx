@@ -1,6 +1,9 @@
 
 import { useState } from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
+
+<Link to="/benefits">Benefits of Outsourcing</Link>
 
 const services = [
   {
@@ -131,16 +134,23 @@ function Home() {
             <span />
           </button>
 
-          <nav className={`intracia-nav ${menuOpen ? "intracia-nav-open" : ""}`}>
-            <a href="#home" onClick={closeMenu}>Home</a>
-            <a href="#benefits" onClick={closeMenu}>Benefits</a>
-            <a href="#services" onClick={closeMenu}>Services</a>
-            <a href="#process" onClick={closeMenu}>Our Process</a>
-            <a href="#contact" onClick={closeMenu}>Contact</a>
-            <a className="intracia-nav-cta" href="#contact" onClick={closeMenu}>
-              Get in touch <span aria-hidden="true">↗</span>
-            </a>
-          </nav>
+
+<nav className={`intracia-nav ${menuOpen ? "intracia-nav-open" : ""}`}>
+  <a href="#home" onClick={closeMenu}>Home</a>
+
+  <Link to="/benefits" onClick={closeMenu}>
+    Benefits of outsourcing
+  </Link>
+
+  <a href="#services" onClick={closeMenu}>Services</a>
+  <a href="#process" onClick={closeMenu}>Our Process</a>
+  <a href="#contact" onClick={closeMenu}>Contact</a>
+
+  <a className="intracia-nav-cta" href="#contact" onClick={closeMenu}>
+    Get in touch <span aria-hidden="true">↗</span>
+  </a>
+</nav>
+
         </div>
       </header>
 
@@ -195,7 +205,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <a className="intracia-side-contact" href="#contact">CONTACT US</a>
+        
       </section>
 
       {/* INTRODUCTION */}

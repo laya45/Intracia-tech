@@ -1,15 +1,14 @@
-
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home.jsx";
-
-// Keep your existing imports and routes for other pages here.
+import Home from "./pages/Home";
+import Benefits from "./pages/Benefits";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/benefits" element={<Benefits />} />
 
-      {/* Add your existing routes below without deleting them. */}
+      {/* Keep your other routes here */}
     </Routes>
   );
 }
