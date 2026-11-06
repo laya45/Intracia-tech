@@ -3,7 +3,6 @@ import { useState } from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 
-<Link to="/benefits">Benefits of Outsourcing</Link>
 
 const services = [
   {
@@ -85,6 +84,7 @@ const whyChooseUs = [
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -115,11 +115,7 @@ function Home() {
       <header className="intracia-header">
         <div className="intracia-header-inner">
           <a className="intracia-logo" href="#home" onClick={closeMenu} aria-label="Intracia Technologies home">
-            <span className="intracia-logo-mark">I</span>
-            <span className="intracia-logo-words">
-              <strong>INTRACIA</strong>
-              <small>TECHNOLOGIES</small>
-            </span>
+            <img className="intracia-brand-logo" src="/images/intracia-logo.png" alt="Intracia Technologies — Moving Ahead" />
           </a>
 
           <button
@@ -142,7 +138,19 @@ function Home() {
     Benefits of outsourcing
   </Link>
 
-  <a href="#services" onClick={closeMenu}>Services</a>
+  <div className="intracia-home-services-dropdown">
+    <a className="intracia-home-services-link" href="#services" onClick={closeMenu}>
+      Services <span aria-hidden="true">⌄</span>
+    </a>
+    <div className="intracia-home-services-menu">
+      <Link to="/services" onClick={closeMenu}>All Services</Link>
+      <Link to="/services/call-center" onClick={closeMenu}>Call Center Services</Link>
+      <Link to="/services/inbound" onClick={closeMenu}>Inbound Call Center Services</Link>
+      <Link to="/services/outbound" onClick={closeMenu}>Outbound Call Center Services</Link>
+      <Link to="/services/telemarketing" onClick={closeMenu}>Telemarketing Services</Link>
+      <Link to="/services/lead-generation" onClick={closeMenu}>Lead Generation Services</Link>
+    </div>
+  </div>
   <a href="#process" onClick={closeMenu}>Our Process</a>
   <a href="#contact" onClick={closeMenu}>Contact</a>
 
@@ -205,7 +213,6 @@ function Home() {
             </div>
           </div>
         </div>
-        
       </section>
 
       {/* INTRODUCTION */}
@@ -533,11 +540,7 @@ function Home() {
           <div className="intracia-footer-main">
             <div className="intracia-footer-brand">
               <a className="intracia-logo" href="#home">
-                <span className="intracia-logo-mark">I</span>
-                <span className="intracia-logo-words">
-                  <strong>INTRACIA</strong>
-                  <small>TECHNOLOGIES</small>
-                </span>
+                <img className="intracia-brand-logo" src="/images/intracia-logo.png" alt="Intracia Technologies — Moving Ahead" />
               </a>
               <p>
                 Customer-focused outsourcing solutions designed to help
@@ -549,7 +552,7 @@ function Home() {
               <h3>Explore</h3>
               <a href="#about">About us</a>
               <a href="#services">Our services</a>
-              <a href="#benefits">Benefits of outsourcing</a>
+              <Link to="/benefits">Benefits of outsourcing</Link>
               <a href="#process">Our process</a>
             </div>
 

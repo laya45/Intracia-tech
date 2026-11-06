@@ -1,14 +1,20 @@
 import { Routes, Route } from "react-router-dom";
+
 import Home from "./pages/Home";
 import Benefits from "./pages/Benefits";
+import CallCenterServices from "./pages/CallCenterServices";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+
       <Route path="/benefits" element={<Benefits />} />
 
-      {/* Keep your other routes here */}
+      <Route
+        path="/services/call-center"
+        element={<CallCenterServices />}
+      />
     </Routes>
   );
 }
